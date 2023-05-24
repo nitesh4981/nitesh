@@ -1,0 +1,1 @@
+select *,current_date as day_id from datavault.dw_lnd.STG_D_PRD_ITM_LU

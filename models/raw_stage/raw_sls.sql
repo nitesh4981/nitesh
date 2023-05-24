@@ -1,0 +1,1 @@
+select * from datavault.dw_lnd.STG_F_SLS_TXN_LN_ITM_B
