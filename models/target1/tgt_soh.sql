@@ -41,9 +41,12 @@ SELECT
 
     current_timestamp as RCD_INS_TS,
 
-    current_timestamp as RCD_UPD_TS
+    tgt.RCD_UPD_TS
 
-FROM {{ref("tmp_soh")}} tmp where (tmp.itm_key,tmp.store_key) in (select distinct itm_key,store_key from DBT.DW_LND_tgt_RIKESH_1.tgt_SOH ) 
+FROM {{ref("tmp_soh")}} tmp
+inner join (select itm_key,store_key, max(RCD_UPD_TS) RCD_UPD_TS from DBT.DW_LND_tgt_RIKESH_1.tgt_SOH group by itm_key,store_key) tgt
+on tgt.store_key=tmp.store_key
+and tgt.itm_key=tmp.itm_key
 
 {% else %}
   select
