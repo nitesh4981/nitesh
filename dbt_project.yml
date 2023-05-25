@@ -47,7 +47,7 @@ models:
     raw_vault:
       tags:
         - 'raw_vault'
-      materialized: incremental
+      materialized: view
       schema: raw_vault_nitesh
       hubs:
         tags:

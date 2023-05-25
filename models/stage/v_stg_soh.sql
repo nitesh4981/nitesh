@@ -8,21 +8,13 @@ hashed_columns:
   INV_PK:
     - 'LOC_ID'
     - 'ITM_ID'
-  LOC_PK:
-    - 'LOC_ID'
-  ITM_PK:
-    - 'ITM_ID'
-  LINK_TXN_ITM_PK:
-    - 'LOC_ID'
-    - 'ITM_ID'
- INVENTORY_HASHDIFF:
+  INVENTORY_HASHDIFF:
     is_hashdiff: true
     columns:
-      - 'PARTKEY'
-      - 'SUPPLIERKEY'
-      - 'AVAILQTY'
-      - 'SUPPLYCOST'
-      - 'PART_SUPPLY_COMMENT'
+      - 'LOC_ID'
+      - 'ITM_ID'
+      - 'UNIT_PRICE'
+      - 'AVAILABLE_STOCK'
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
