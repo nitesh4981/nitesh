@@ -1,0 +1,1 @@
+select *,current_date as DAY_ID from DATAVAULT.DW_LND.SOH
