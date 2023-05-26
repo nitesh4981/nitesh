@@ -1,1 +1,14 @@
-select *,current_date as day_id from datavault.dw_lnd.STG_D_PRD_ITM_LU
+select ITM_ID
+,ITM_DESC
+,SBC_ID
+,SBC_DESC
+,CLS_ID
+,CLS_DESC
+,DIV_ID
+,DIV_DESC
+,INV_IND
+,SELLABLE_IND
+,FIRST_RCVD_DT
+,LAST_RCVD_DT
+,FIRST_SOLD_DT
+,LAST_SOLD_DT,current_date as day_id from datavault.dw_lnd.STG_D_PRD_ITM_LU
