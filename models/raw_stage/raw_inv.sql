@@ -1,1 +1,1 @@
-select *,current_date as DAY_ID from DATAVAULT.DW_LND.SOH
+select *,dateadd(day, 1,current_date::date) DAY_ID from DATAVAULT.DW_LND.SOH

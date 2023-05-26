@@ -1,5 +1,6 @@
 {%- set source_model = "v_stg_soh" -%}
 {%- set src_pk = "INV_PK" -%}
+{%- set src_hashdiff = "INVENTORY_HASHDIFF" -%}
 {%- set src_payload = ["UNIT_PRICE","AVAILABLE_STOCK"] -%}
 {%- set src_eff = "EFFECTIVE_FROM" -%}
 {%- set src_ldts = "LOAD_DATE" -%}
