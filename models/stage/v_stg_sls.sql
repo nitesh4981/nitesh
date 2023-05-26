@@ -20,6 +20,15 @@ hashed_columns:
     - 'TXN_ID'
     - 'TXN_LN_ID'
     - 'LOC_ID'  
+  SLS_HASHDIFF:
+    is_hashdiff: true
+    columns:
+      - 'TXN_ID'
+      - 'TXN_LN_ID'  
+      - 'DAY_ID'
+      - 'F_SLS_QTY'
+      - 'F_SLS_CST_LCL'
+      - 'F_SLS_RTL_LCL'
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
