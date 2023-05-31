@@ -11,7 +11,7 @@ hashed_columns:
   LOCATION_DISTRICT_PK:
     - 'LOC_ID'
     - 'DST_ID'
-  LOCATION_REGION_PK:
+  DISTRICT_REGION_PK:
     - 'LOC_ID'
     - 'RGN_ID'
   LOCATION_HASHDIFF:
