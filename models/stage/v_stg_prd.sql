@@ -36,7 +36,12 @@ hashed_columns:
     is_hashdiff: true
     columns:
       - 'SBC_ID'
-      - 'SBC_DESC'                  
+      - 'SBC_DESC' 
+  PRD_CLS_HASHDIFF:
+    is_hashdiff: true
+    columns:
+      - 'CLS_ID'
+      - 'CLS_DESC'                    
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
