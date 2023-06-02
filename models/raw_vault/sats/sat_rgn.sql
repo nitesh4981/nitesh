@@ -1,6 +1,7 @@
 {%- set source_model = "v_stg_loc" -%}
 {%- set src_pk = "REGION_PK" -%}
 {%- set src_payload = ['RGN_ID','RGN_DESC'] -%}
+{%- set src_hashdiff = "REGION_HASHDIFF" -%}
 {%- set src_eff = "EFFECTIVE_FROM" -%}
 {%- set src_ldts = "LOAD_DATE" -%}
 {%- set src_source = "RECORD_SOURCE" -%}
